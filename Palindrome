@@ -1,0 +1,7 @@
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        # keep only alphanumeric characters and convert to lowercase
+        s = "".join(i.lower() for i in s if i.isalnum())
+        
+        # check palindrome
+        return s == s[::-1]
