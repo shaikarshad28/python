@@ -1,0 +1,23 @@
+a = input("Enter boy name: ").lower().replace(" ", "")
+b = input("Enter girl name: ").lower().replace(" ", "")
+a1 = list(a)
+b1 = list(b)
+for ch in a[:]:
+    if ch in b1:
+        a1.remove(ch)
+        b1.remove(ch)
+cnt = len(a1) + len(b1)
+res = list("FLAMES")
+index = 0
+while len(res) > 1:
+    index = (index + cnt - 1) % len(res)
+    res.pop(index)
+result_map = {
+    'F': "Friends",
+    'L': "Love",
+    'A': "Affection",
+    'M': "Marriage",
+    'E': "Enemies",
+    'S': "Siblings"
+}
+print("Relationship:", result_map[res[0]])
