@@ -1,0 +1,16 @@
+def add_fixed_values():
+    print(20 + 40)
+def add_and_print(a, b):
+    print(a + b)
+def add_internal_values():
+    a = 90
+    b = 11
+    return a + b
+def add_and_return(a, b):
+    return a + b
+add_fixed_values()
+add_and_print(10, 20)
+result1 = add_internal_values()
+result2 = add_and_return(5, 15)
+print(result1)
+print(result2)
