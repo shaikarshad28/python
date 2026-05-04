@@ -1,0 +1,8 @@
+def arshad(a):
+    if a==1:
+        return 1
+    else:
+        return a * arshad(a-1)
+a=25
+x=arshad(a)
+print(x)
