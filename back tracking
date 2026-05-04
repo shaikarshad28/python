@@ -1,0 +1,8 @@
+def arshad(a):
+    if a == 5:
+        return 1
+    B=arshad(a+1)
+    print("hi")
+    return B+2
+res=arshad(1)
+print(res)
